@@ -35,12 +35,12 @@ function register_videojs(){
 		wp_register_style( 'videojs', '//vjs.zencdn.net/5.19.0/video-js.min.css' );
 		wp_enqueue_style( 'videojs' );
 	} else { //use the self hosted version
-		wp_register_script( 'videojs', plugins_url( 'bower_components/videojs/video.js' , __FILE__ ) );
-		wp_register_style( 'videojs', plugins_url( 'bower_components/videojs/video-js.css' , __FILE__ ) );
-		wp_enqueue_style( 'videojs' );
+		wp_register_script( 'videojs', plugins_url( 'dist/index.js' , __FILE__ ) );
+//		wp_register_style( 'videojs', plugins_url( 'bower_components/videojs/video-js.css' , __FILE__ ) );
+//		wp_enqueue_style( 'videojs' );
 	}
 	
-	wp_register_script( 'videojs-youtube', plugins_url( 'bower_components/videojs-youtube/dist/Youtube.min.js' , __FILE__ ) );
+//	wp_register_script( 'videojs-youtube', plugins_url( 'bower_components/videojs-youtube/dist/Youtube.min.js' , __FILE__ ) );
 }
 add_action( 'wp_enqueue_scripts', 'register_videojs' );
 
@@ -48,7 +48,7 @@ add_action( 'wp_enqueue_scripts', 'register_videojs' );
 /* Include the scripts before </body> */
 function add_videojs_header(){
 	wp_enqueue_script( 'videojs' );
-	wp_enqueue_script( 'videojs-youtube' );
+	//wp_enqueue_script( 'videojs-youtube' );
 }
 
 

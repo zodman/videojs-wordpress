@@ -1,3 +1,8 @@
+This projects is based on "Video.js - HTML5 Video Player for Wordpress"
+
+I update the video.js version.
+
+
 === Video.js - HTML5 Video Player for Wordpress ===
 Contributors: nosecreek, Steve Heffernan, schnere
 Donate link: http://ncrk.ca/videojs
@@ -20,7 +25,7 @@ View [videojs.com](http://videojs.com) for additional information.
 
 This section describes how to install the plugin and get it working.
 
-1. Upload the `videojs-html5-video-player-for-wordpress` folder to the `/wp-content/plugins/` directory
+1. Upload the `videojs-wordpress` folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. Use the [videojs] shortcode in your post or page using the following options.
 
@@ -118,6 +123,8 @@ Uncheck the *Use the [video] shortcode?* option __only__ if you are using WordPr
 
 
 == Changelog ==
+= 4.6.0 =
+* update to use Video.js from upstream
 
 = 4.5.0 =
 
